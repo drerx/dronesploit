@@ -1,0 +1,64 @@
+site_author: dhondta
+site_name: "DroneSploit - A Metasploit-like console for hacking drones"
+repo_url: https://github.com/dhondta/dronesploit
+copyright: Copyright &copy; 2019-2023 Alexandre D'Hondt
+docs_dir: pages
+nav:
+  - Introduction: index.md
+  - 'Quick Start': quickstart.md
+  - 'New Modules': newmodules.md
+  - Scenarios:
+    - scenarios/index.md
+    - 'Hobbico C-me - Changing SSID': scenarios/hobbico-cme.md
+    - 'Hobbico Flitt - Power Off': scenarios/hobbico-flitt.md
+    - 'DJI Tello - Landing': scenarios/dji-tello.md
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:alexandre.dhondt@gmail.com
+      name: Contact Alex
+    - icon: fontawesome/brands/github
+      link: https://github.com/dhondta
+      name: Alex on GitHub
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/alexandre-d-2ab2aa14/
+      name: Alex on LinkedIn
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/alex_dhondt
+      name: Alex on Twitter
+extra_css:
+  - css/extra.css
+theme:
+  name: material
+  locale: en
+  navigation_depth: 8
+  collapse_navigation: true
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.indexes
+    - navigation.top
+    - toc.integrate
+  logo: img/logo.png
+  favicon: img/icon.png
+  highlightjs: true
+  hljs_languages:
+    - yaml
+    - python
+    - console
+use_directory_urls: false
+markdown_extensions:
+  - admonition
+  - codehilite:
+      linenums: true
+  - pymdownx.details
+  - toc:
+      permalink: True
